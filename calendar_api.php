@@ -45,7 +45,7 @@ function getCalendarEvents() {
         }
 
         $service = new Calendar($client);
-        $calendarId = 'ed3332b610c17e9a0c90ece4f4688f04cae71b312fea5e10e18e72d5dd0d80d5@group.calendar.google.com';
+        $calendarId = 'primary';
 
         $bounds = getWeekBounds();
 

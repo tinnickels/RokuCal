@@ -36,6 +36,7 @@ A system that displays Google Calendar events on a Roku TV with high contrast de
    ```
 
 5. Test the API by visiting `http://localhost:8000/calendar_api.php`
+	> update the $calendarID in this file if you want something other than the primary calendar
 
 ## Roku App Setup
 
