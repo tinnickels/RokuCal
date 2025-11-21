@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="CalendarScene" extends="Scene">
+    <script type="text/brightscript" uri="CalendarScene.brs"/>
+
+    <children>
+        <!-- Background -->
+        <Rectangle width="1920" height="1080" color="0x000000"/>
+
+        <!-- Agenda Container - 5 days as horizontal rows (no header) -->
+        <Group id="agendaContainer" translation="[20, 20]">
+            <!-- Day 0 (Today) -->
+            <Group id="day0" translation="[0, 0]">
+                <Rectangle width="1880" height="127" color="0x1a1a1a"/>
+            </Group>
+
+            <!-- Day 1 -->
+            <Group id="day1" translation="[0, 137]">
+                <Rectangle width="1880" height="127" color="0x2a2a2a"/>
+            </Group>
+
+            <!-- Day 2 -->
+            <Group id="day2" translation="[0, 274]">
+                <Rectangle width="1880" height="127" color="0x1a1a1a"/>
+            </Group>
+
+            <!-- Day 3 -->
+            <Group id="day3" translation="[0, 411]">
+                <Rectangle width="1880" height="127" color="0x2a2a2a"/>
+            </Group>
+
+            <!-- Day 4 -->
+            <Group id="day4" translation="[0, 548]">
+                <Rectangle width="1880" height="127" color="0x1a1a1a"/>
+            </Group>
+        </Group>
+
+        <!-- Status indicator -->
+        <Label id="statusLabel"
+               width="1920"
+               height="50"
+               translation="[0, 1020]"
+               text="Loading calendar events..."
+               horizAlign="center"
+               vertAlign="center"
+               font="font:MediumBoldSystemFont"
+               color="0xFFFF00"/>
+    </children>
+</component>
