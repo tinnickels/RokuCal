@@ -23,6 +23,8 @@ A system that displays Google Calendar events on a Roku TV with high contrast de
    - Create credentials (OAuth 2.0 client ID) for a desktop application
    - set the redirect URI to http://localhost:8000
    - Download the credentials JSON file and save as `credentials.json`
+   - Set the publishing status from "Testing" to "In Production" (otherwise tokens expire after 7 days)
+		> Note: you do not need full verification for internal/limited use
 
 3. Run the authentication setup:
    ```bash
@@ -36,7 +38,6 @@ A system that displays Google Calendar events on a Roku TV with high contrast de
    ```
 
 5. Test the API by visiting `http://localhost:8000/calendar_api.php`
-	> update the $calendarID in this file if you want something other than the primary calendar
 
 ## Roku App Setup
 
